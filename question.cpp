@@ -743,34 +743,43 @@
 
 
 // Approach 1: Using ASCII values
-string Upe(string str) {
-    for (int i = 0; i < str.length(); i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            str[i] = str[i] - 32;
-        }
-    }
-    return str;
-}
+
+// #include <iostream>
+// using namespace std;
+// string Upe(string str) {
+//     for (int i = 0; i < str.length(); i++) {
+//         if (str[i] >= 'a' && str[i] <= 'z') {
+//             str[i] = str[i] - 32;
+//         }
+//     }
+//     return str;
+// }
 
 // Approach 2: Using toupper() function
-#include <cctype>
-string Upe(string str) {
-    for (int i = 0; i < str.length(); i++) {
-        str[i] = toupper(str[i]);
-    }
-    return str;
-}
+// #include <cctype>
+// string Upe(string str) {
+//     for (int i = 0; i < str.length(); i++) {
+//         str[i] = toupper(str[i]);
+//     }
+//     return str;
+// }
 
 // Approach 3: Using transform() function
-#include <algorithm>
-string Upe(string str) {
-    transform(str.begin(), str.end(), str.begin(), ::toupper);
-    return str;
-}
+// #include <algorithm>
+// string Upe(string str) {
+//     transform(str.begin(), str.end(), str.begin(), ::toupper);
+//     return str;
+// }
 
 
 
+// int main() {
+//     string str = "Hello World";
+//     string up = Upe(str);
+//     cout << up << endl;
+//     return 0;
 
+// }
 
 
 
@@ -779,24 +788,27 @@ string Upe(string str) {
 // Q - 22
 
 
-// #include <iostream>
-// using namespace std;
-
-// void strlen(string str){
+// Approach 1: Using length() function
+// int strlen(string str){
 //     return str.length();
 // }
 
-// int main(){
-//     string str = "hello, world";
-//     int len = strlen(str);
-//     cout << "Length of the string: " << len << endl;
-//     return 0;
+// Approach 2: Using loop
+// int strlen(string str){
+//     int len = 0;
+//     while(str[len] != '\0'){
+//         len++;
+//     }
+//     return len;
 // }
 
 
 
-
-
+// int main() {
+//     string str = "Hello World";
+//     cout << "Length of string: " << strlen(str) << endl;
+//     return 0;
+// }
 
 
 
@@ -860,30 +872,95 @@ string Upe(string str) {
 
 
 
-#include <iostream>
-#include <sstream>
-#include <vector>
-using namespace std;
+// #include <iostream>
+// #include <sstream>
+// #include <vector>
+// using namespace std;
 
-std::vector<std::string> split(const std::string& inputString) {
-    std::istringstream iss(inputString);
-    std::vector<std::string> words;
-    std::string word;
+// std::vector<std::string> split(const std::string& inputString) {
+//     std::istringstream iss(inputString);
+//     std::vector<std::string> words;
+//     std::string word;
 
-    while (iss >> word) {
-        words.push_back(word);
-    }
+//     while (iss >> word) {
+//         words.push_back(word);
+//     }
 
-    return words;
-}
+//     return words;
+// }
 
-int main() {
-    std::string input = "Hello world, welcome to JavaScript!";
-    std::vector<std::string> words = split(input);
+// int main() {
+//     std::string input = "Hello world, welcome to JavaScript!";
+//     std::vector<std::string> words = split(input);
 
-    for (const auto& word : words) {
-        std::cout << "'" << word << "', ";
-    }
+//     for (const auto& word : words) {
+//         std::cout << "'" << word << "', ";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// Quaternion - 26
+
+
+// #include <iostream>
+// using namespace std;
+
+
+
+// Approach 1: Using string length and indexing
+
+// bool checkEndsWith(string str, char c) {
+//     int len = str.length();
+//     if (str[len - 1] == c) {
+//         return true;
+//     }
+//     return false;
+// }
+
+
+
+// Approach 2: Using string substr and comparison
+
+// bool checkEndsWith(string str, char c) {
+//     string lastChar = str.substr(str.length() - 1);
+//     if (lastChar == string(1, c)) {
+//         return true;
+//     }
+//     return false;
+// }
+
+
+
+// int main() {
+//     string str = "Hello World";
+//     char c = 'd';
+//     bool result = checkEndsWith(str, c);
+// }
+
+
+
+
+
+
+
+
+
+
+// Question - 27
+
+
+
+// #include <iostream>
+// usinng namespace std;
