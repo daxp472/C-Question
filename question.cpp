@@ -964,3 +964,54 @@
 
 // #include <iostream>
 // usinng namespace std;
+
+
+
+
+
+
+
+
+
+// Question - 28
+
+
+
+// #include <iostream>
+// using namespace std;
+
+
+
+
+
+
+
+
+
+
+
+
+// Question - 29
+
+
+
+// #include <iostream>
+// using namespace std;
+
+
+
+
+
+
+
+
+
+
+// Question - 30
+
+
+
+// #include <iostream>
+// using namespace std;
+
+
